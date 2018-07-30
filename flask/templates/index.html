@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>DataLabs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Text Classification</h1>
+    
+    <form action="/predict" method="post" enctype="multipart/form-data">
+     <input type="text" name="text"  height="100" size="35"></input><br><br>
+     <input type="submit" value="Predict"> {% if label %} {{ label }} {% endif %}
+	</form>
+  </body>
+</html>
